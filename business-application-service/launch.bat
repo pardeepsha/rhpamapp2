@@ -1,5 +1,9 @@
 @echo off
 
+set JAVA_HOME=D:/Programs/jdk1.8.0_451
+set PATH=%JAVA_HOME%/bin;%PATH%
+echo JAVA HOME set to folder: %JAVA_HOME% 
+
 set mavenInput="%*"
 
 if "%*" == "" (

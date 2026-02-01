@@ -1,5 +1,7 @@
 <kie-server-state>
-  <controllers/>
+  <controllers>
+    <string>http://localhost:8080/business-central/rest/controller</string>
+  </controllers>
   <configuration>
     <configItems>
       <config-item>
@@ -8,8 +10,8 @@
         <type>java.lang.String</type>
       </config-item>
       <config-item>
-        <name>org.kie.server.sb.cfg.cxf.path</name>
-        <value>/rest</value>
+        <name>org.kie.server.controller</name>
+        <value>http://localhost:8080/business-central/rest/controller</value>
         <type>java.lang.String</type>
       </config-item>
       <config-item>
@@ -18,8 +20,8 @@
         <type>java.lang.String</type>
       </config-item>
       <config-item>
-        <name>org.kie.server.controller</name>
-        <value></value>
+        <name>org.kie.server.sb.cfg.cxf.path</name>
+        <value>/rest</value>
         <type>java.lang.String</type>
       </config-item>
     </configItems>
