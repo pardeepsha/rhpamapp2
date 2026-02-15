@@ -46,3 +46,7 @@ http://localhost:8090/
 
 http://localhost:8090/rest/server
 
+-- Run below curl to get server details
+
+C:\Users\PARDEEP>curl -X GET "http://localhost:8090/rest/server" -H "accept: application/json" -H "Authorization: Basic d2JhZG1pbjp3YmFkbWlu" 
+

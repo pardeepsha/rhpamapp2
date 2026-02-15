@@ -11,7 +11,7 @@
       </config-item>
       <config-item>
         <name>org.kie.server.controller</name>
-        <value>http://localhost:8080/business-central/rest/controller</value>
+        <value></value>
         <type>java.lang.String</type>
       </config-item>
       <config-item>
