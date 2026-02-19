@@ -46,7 +46,15 @@ http://localhost:8090/
 
 http://localhost:8090/rest/server
 
+-- kie server api docs
+http://localhost:8080/kie-server/docs/
+
 -- Run below curl to get server details
 
 C:\Users\PARDEEP>curl -X GET "http://localhost:8090/rest/server" -H "accept: application/json" -H "Authorization: Basic d2JhZG1pbjp3YmFkbWlu" 
 
+C:\Users\PARDEEP>curl -X GET -H "accept: application/json" -H "Authorization: Basic d2JhZG1pbjp3YmFkbWlu" http://localhost:8090/rest/server/containers
+
+C:\Users\PARDEEP>curl -X GET -H "accept: application/json" -H "Authorization: Basic d2JhZG1pbjp3YmFkbWlu" http://localhost:8090/rest/server/containers/business-application-kjar_1.0-SNAPSHOT/processes
+
+C:\Users\PARDEEP>curl -X POST -H "accept: application/json" -H "Content-Type: application/json" -H "Authorization: Basic d2JhZG1pbjp3YmFkbWlu" -d "{}" http://localhost:8090/rest/server/containers/business-application-kjar_1.0-SNAPSHOT/processes/ptest2.ptest2bp/instances
